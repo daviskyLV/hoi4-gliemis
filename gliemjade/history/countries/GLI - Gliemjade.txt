@@ -1,0 +1,22 @@
+capital = 808
+
+# Since Gliemjade is locked behind decisions and events,
+# by default it won't be a starting country.
+# Therefore, config assumes it inherits Latvia's history
+
+set_research_slots = 2 # Slow brain
+set_stability = 0.6 # Recent overthrow gives small stability
+set_war_support = 0.7 # Starts out fascist
+
+set_politics = {
+	ruling_party = fascism
+	election_frequency = 48 # 4 yrs
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 70
+	communism = 5
+	neutrality = 15
+}

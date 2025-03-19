@@ -1,0 +1,5 @@
+gliemjade_lat_decisions = {
+	allowed = {
+		tag = LAT
+	}
+}

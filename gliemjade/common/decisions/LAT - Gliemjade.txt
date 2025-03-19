@@ -1,0 +1,74 @@
+gliemjade_lat_decisions = {
+	gliemjade_lat_expand_cabbages = {
+		# First step to support the snails in Latvia
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+
+		complete_effect = {
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			base = 7
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	gliemjade_lat_shelter_snails = {
+		# After giving a place for snails to feast on, protect them from farmers
+		visible = {
+		}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+
+		modifier = {
+			stability_weekly = -0.03
+		}
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			# Higher chance, since we already did the first decision
+			base = 25
+		}
+	}
+
+	gliemjade_lat_arm_snails = {
+		# Farmer attacks have gone too far, it's time to arm the snails!
+		# Gives a 180 day countdown to have 4000 guns in stockpile
+		# If succeeds, snails peacefully take over the country,
+		# Otherwise a civil war erupts
+		visible = {
+		}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 180
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			# Happens when selecting
+		}
+		remove_effect = {
+			# Happens after timer runs out
+		}
+
+		ai_will_do = {
+			# Risky decision, so low by default
+			base = 5
+		}
+	}
+}
