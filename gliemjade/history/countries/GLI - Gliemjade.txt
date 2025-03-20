@@ -6,7 +6,7 @@ capital = 808
 
 set_research_slots = 2 # Slow brain
 set_stability = 0.6 # Recent overthrow gives small stability
-set_war_support = 0.7 # Starts out fascist
+set_war_support = 0.8 # Starts out fascist
 
 set_politics = {
 	ruling_party = fascism

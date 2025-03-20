@@ -3,7 +3,7 @@ gliemjade_lat_decisions = {
 		# First step to support the snails in Latvia
 		cost = 50
 		fire_only_once = yes
-		days_remove = 30
+		days_remove = 60
 
 		complete_effect = {
 		}
@@ -28,10 +28,10 @@ gliemjade_lat_decisions = {
 
 		cost = 50
 		fire_only_once = yes
-		days_remove = 30
+		days_remove = 60
 
 		modifier = {
-			stability_weekly = -0.03
+			stability_weekly = -0.02
 		}
 
 		complete_effect = {
@@ -51,6 +51,12 @@ gliemjade_lat_decisions = {
 		visible = {
 		}
 
+		available = {
+			num_of_controlled_states > 1
+		}
+
+		icon = generic_ignite_civil_war
+
 		cost = 50
 		fire_only_once = yes
 		days_remove = 180
@@ -64,11 +70,28 @@ gliemjade_lat_decisions = {
 		}
 		remove_effect = {
 			# Happens after timer runs out
+			if = {
+				# Successful takeover
+				limit = {
+					has_equipment = { infantry_equipment > 3999 }
+				}
+				# Thanks to https://www.reddit.com/r/hoi4/comments/81udl2/comment/dv5dg8w/
+				GLI = {
+					annex_country = {
+						target = LAT
+						transfer_troops = yes
+					}
+					change_tag_from = LAT
+				}
+			}
+			else = {
+				# Erupts in civil war
+				add_political_power = -75
+			}
 		}
 
 		ai_will_do = {
-			# Risky decision, so low by default
-			base = 5
+			base = 10
 		}
 	}
 }
