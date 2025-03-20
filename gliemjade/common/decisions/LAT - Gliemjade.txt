@@ -5,7 +5,11 @@ gliemjade_lat_decisions = {
 		fire_only_once = yes
 		days_remove = 60
 
-		complete_effect = {
+		remove_effect = {
+			set_variable = {
+				var = gliemjade_lat_breakaway
+				value = 1
+			}
 		}
 
 		modifier = {
@@ -22,8 +26,14 @@ gliemjade_lat_decisions = {
 	}
 
 	gliemjade_lat_shelter_snails = {
-		# After giving a place for snails to feast on, protect them from farmers
+		# After giving food for snails to feast on, protect them from farmers
 		visible = {
+			has_variable = gliemjade_lat_breakaway
+			check_variable = {
+				var = gliemjade_lat_breakaway
+				value = 1
+				compare = equals
+			}
 		}
 
 		cost = 50
@@ -34,7 +44,11 @@ gliemjade_lat_decisions = {
 			stability_weekly = -0.02
 		}
 
-		complete_effect = {
+		remove_effect = {
+			set_variable = {
+				var = gliemjade_lat_breakaway
+				value = 2
+			}
 		}
 
 		ai_will_do = {
@@ -49,6 +63,12 @@ gliemjade_lat_decisions = {
 		# If succeeds, snails peacefully take over the country,
 		# Otherwise a civil war erupts
 		visible = {
+			has_variable = gliemjade_lat_breakaway
+			check_variable = {
+				var = gliemjade_lat_breakaway
+				value = 2
+				compare = equals
+			}
 		}
 
 		available = {
@@ -67,31 +87,81 @@ gliemjade_lat_decisions = {
 
 		complete_effect = {
 			# Happens when selecting
+			set_variable = {
+				var = gliemjade_lat_breakaway
+				value = 3
+			}
 		}
 		remove_effect = {
 			# Happens after timer runs out
+			GLI = {
+				hidden_effect = {
+					every_state = {
+						limit = { is_core_of = LAT}
+						add_core_of = GLI
+					}
+					inherit_technology = LAT
+				}
+			}
+
 			if = {
 				# Successful takeover
 				limit = {
 					has_equipment = { infantry_equipment > 3999 }
 				}
+
+				hidden_effect = {
+					send_equipment = {
+						type = infantry_equipment
+						amount = 4000
+						target = GLI
+					}
+				}
+
 				# Thanks to https://www.reddit.com/r/hoi4/comments/81udl2/comment/dv5dg8w/
 				GLI = {
-					annex_country = {
-						target = LAT
-						transfer_troops = yes
+					hidden_effect = {
+						annex_country = {
+							target = LAT
+							transfer_troops = yes
+						}
 					}
+
 					change_tag_from = LAT
 				}
 			}
 			else = {
 				# Erupts in civil war
 				add_political_power = -75
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -1000
+				}
+
+				GLI = {
+					hidden_effect = {
+						random_state = {
+							limit = { is_owned_by = LAT }
+							transfer_state_to = GLI
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 1000
+						}
+					}
+					
+					change_tag_from = LAT
+				}
+
+				declare_war_on = {
+					target = GLI
+					type = annex_everything
+				}
 			}
 		}
 
 		ai_will_do = {
-			base = 10
+			base = 15
 		}
 	}
 }
