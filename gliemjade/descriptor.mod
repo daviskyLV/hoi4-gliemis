@@ -6,3 +6,4 @@ tags={
 }
 name="Gliemjāde"
 supported_version="1.16.1"
+picture="gliemis.png"
