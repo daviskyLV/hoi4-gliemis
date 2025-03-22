@@ -5,16 +5,15 @@ characters = {
 
         country_leader = {
             ideology = fascism_ideology
+            traits = {
+                GLI_trait_gliemis
+            }
         }
 
         portraits = {
             civilian = {
                 large = GFX_portrait_GLI_gliemis
             }
-        }
-
-        traits = {
-            GLI_trait_gliemis
         }
     }
 
