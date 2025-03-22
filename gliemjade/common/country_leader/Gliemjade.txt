@@ -1,0 +1,7 @@
+leader_traits = {
+	GLI_trait_gliemis = {
+		random = no
+		defence = 0.25
+		army_speed_factor = -0.25
+	}
+}

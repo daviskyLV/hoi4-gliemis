@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_GLI_gliemis
+		texturefile = gfx/gliemjade/leaders/portrait_gliemis_glotainais.dds
+	}
+}

@@ -1,4 +1,5 @@
 ﻿l_english:
+ ## COUNTRY NAMES
  # Default undefined
  GLI: "Gliemjāde"
  GLI_DEF: "Gliemjāde"
@@ -7,24 +8,34 @@
  # Apziņa un Prāts (democratic)
  GLI_democratic: "9th Dimension"
  GLI_democratic_DEF: "the 9th Dimension"
- GLI_democratic_ADJ: "Star Souls"
+ GLI_democratic_ADJ: "Outer Dimensional"
  GLI_democratic_party: "AuP"
  GLI_democratic_party_long: "Apziņa un Prāts"
  # Fascist
  GLI_fascism: "Snail Reich"
  GLI_fascism_DEF: "Snail Reich"
- GLI_fascism_ADJ: "Slimy Snails"
+ GLI_fascism_ADJ: "Snail Reich's"
  GLI_fascism_party: "LČ"
  GLI_fascism_party_long: "Lielā Čaula"
  # Communist
  GLI_communism: "GPL Snail"
  GLI_communism_DEF: "GPL Snail"
- GLI_communism_ADJ: "Open Sourced"
+ GLI_communism_ADJ: "Open Sourced Snail's"
  GLI_communism_party: "LG"
  GLI_communism_party_long: "Linux Gliemji"
  # Non-aligned/Neutrality
  GLI_neutrality: "Garden Snail"
  GLI_neutrality_DEF: "the Garden Snail"
- GLI_neutrality_ADJ: "Garden"
+ GLI_neutrality_ADJ: "Garden Snail's"
  GLI_neutrality_party: "GG"
  GLI_neutrality_party_long: "Gardās Gļotas"
+
+ ## CHARACTERS
+ GLI_char_gliemis: "Gliemis Gļotainais"
+ GLI_char_AAA: "Absolūtā Augstākā Apziņa"
+ GLI_char_linards_rozvirs: "Linards Rozvīrs"
+ GLI_char_andrejs_pingvins: "Andrejs Pingvīns"
+
+ ## CHARACTER TRAITS
+ GLI_trait_gliemis:0 "Slow lifestyle"
+ GLI_trait_gliemis_desc:0 "After living for so long under a shell in his own slime, Gliemis Gļotainais has not only hardened but also slower on the field."

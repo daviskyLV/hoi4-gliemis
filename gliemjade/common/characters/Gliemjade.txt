@@ -1,0 +1,47 @@
+characters = {
+    GLI_char_gliemis = {
+        name = GLI_char_gliemis
+        gender = male
+
+        country_leader = {
+            ideology = fascism_ideology
+        }
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_GLI_gliemis
+            }
+        }
+
+        traits = {
+            GLI_trait_gliemis
+        }
+    }
+
+    GLI_char_AAA = {
+        name = GLI_char_AAA
+        gender = undefined
+
+        country_leader = {
+            ideology = conservatism
+        }
+    }
+
+    GLI_char_linards_rozvirs = {
+        name = GLI_char_linards_rozvirs
+        gender = male
+
+        country_leader = {
+            ideology = centrism
+        }
+    }
+
+    GLI_char_andrejs_pingvins = {
+        name = GLI_char_andrejs_pingvins
+        gender = male
+
+        country_leader = {
+            ideology = marxism
+        }
+    }
+}
