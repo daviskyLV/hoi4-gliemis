@@ -22,8 +22,18 @@ characters = {
         name = GLI_char_AAA
         gender = undefined
 
+        portraits = {
+            civilian = {
+                large = GFX_leader_GLI_AAA
+            }
+        }
+
         country_leader = {
             ideology = conservatism
+            traits = {
+                GLI_trait_mega_thinker
+                GLI_trait_high_energy
+            }
         }
     }
 
@@ -61,8 +71,48 @@ characters = {
         name = GLI_char_andrejs_pingvins
         gender = male
 
+        portraits = {
+            civilian = {
+                large = GFX_leader_GLI_andrejs_pingvins
+                small = GFX_advisor_GLI_andrejs_pingvins
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = GLI_char_andrejs_pingvins
+            traits = {
+                GLI_trait_communism_supporter
+                GLI_trait_development_supporter
+            }
+        }
+
         country_leader = {
             ideology = marxism
+            traits = {
+                GLI_trait_development_supporter
+                GLI_trait_open_source
+            }
+        }
+    }
+
+    GLI_char_austra_domataja = {
+        name = GLI_char_austra_domataja
+        gener = female
+
+        portraits = {
+            civilian = {
+                small = GFX_advisor_GLI_austra_domataja
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = GLI_char_austra_domataja
+            traits = {
+                GLI_trait_democratic_supporter
+                GLI_trait_development_supporter
+            }
         }
     }
 }

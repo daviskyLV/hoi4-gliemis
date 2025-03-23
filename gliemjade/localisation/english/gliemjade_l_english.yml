@@ -35,6 +35,7 @@
  GLI_char_AAA: "Absolūtā Augstākā Apziņa"
  GLI_char_linards_rozvirs: "Linards Rozvīrs"
  GLI_char_andrejs_pingvins: "Andrejs Pingvīns"
+ GLI_char_austra_domataja: "Austra Domātāja"
 
  ## CHARACTER TRAITS
  GLI_trait_gliemis:0 "Slow lifestyle"
@@ -43,3 +44,8 @@
  GLI_trait_nonaligned_supporter:0 "Non-aligned supporter"
  GLI_trait_production_assistant:0 "Production assistant"
  GLI_trait_cavalry_dream:0 "Dreams of Cavalry"
+ GLI_trait_democratic_supporter:0 "Democracy supporter"
+ GLI_trait_development_supporter:0 "Development supporter"
+ GLI_trait_mega_thinker:0 "Mega thinker"
+ GLI_trait_high_energy:0 "High energy levels"
+ GLI_trait_communism_supporter:0 "Communism supporter"

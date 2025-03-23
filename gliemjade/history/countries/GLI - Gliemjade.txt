@@ -9,6 +9,7 @@ recruit_character = GLI_char_gliemis
 recruit_character = GLI_char_AAA
 recruit_character = GLI_char_linards_rozvirs
 recruit_character = GLI_char_andrejs_pingvins
+recruit_character = GLI_char_austra_domataja
 
 set_research_slots = 2 # Slow brain
 set_stability = 0.6 # Recent overthrow gives small stability

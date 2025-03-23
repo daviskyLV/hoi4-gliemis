@@ -8,9 +8,25 @@ spriteTypes = {
 		name = GFX_leader_GLI_linards_rozvirs
 		texturefile = gfx/gliemjade/leaders/linards_rozvirs.dds
 	}
+	spriteType = {
+		name = GFX_leader_GLI_AAA
+		texturefile = gfx/gliemjade/leaders/absoluta_augstaka_apzina.dds
+	}
+	spriteType = {
+		name = GFX_leader_GLI_andrejs_pingvins
+		texturefile = gfx/gliemjade/leaders/andrejs_pingvins.dds
+	}
 	## ADVISORS
 	spriteType = {
 		name = GFX_advisor_GLI_linards_rozvirs
 		texturefile = gfx/gliemjade/advisors/linards_rozvirs.dds
+	}
+	spriteType = {
+		name = GFX_advisor_GLI_austra_domataja
+		texturefile = gfx/gliemjade/advisors/austra_domataja.dds
+	}
+	spriteType = {
+		name = GFX_advisor_GLI_andrejs_pingvins
+		texturefile = gfx/gliemjade/advisors/andrejs_pingvins.dds
 	}
 }

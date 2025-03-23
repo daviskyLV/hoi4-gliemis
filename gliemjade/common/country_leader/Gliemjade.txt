@@ -22,6 +22,19 @@ leader_traits = {
 		neutrality_acceptance = 75
 	}
 
+	GLI_trait_democratic_supporter = {
+		random = no
+		democratic_drift = 0.05
+		democratic_acceptance = 75
+		war_support_weekly = -0.01
+	}
+
+	GLI_trait_communism_supporter = {
+		random = no
+		communism_drift = 0.05
+		communism_acceptance = 75
+	}
+
 	GLI_trait_production_assistant = {
 		random = no
 		production_factory_max_efficiency_factor = 0.1
@@ -30,5 +43,34 @@ leader_traits = {
 	GLI_trait_cavalry_dream = {
 		random = no
 		cavalry_attack_factor = 0.15
+	}
+
+	GLI_trait_development_supporter = {
+		random = no
+		production_speed_buildings_factor = 0.25
+		consumer_goods_factor = -0.15
+	}
+
+	GLI_trait_mega_thinker = {
+		random = no
+		research_speed_factor = 0.4
+		max_planning_factor = 0.5
+		planning_speed = 0.3
+		army_speed_factor = -0.1
+	}
+
+	GLI_trait_high_energy = {
+		random = no
+		enemy_justify_war_goal_time = -0.25
+		resistance_activity = 0.4
+	}
+
+	GLI_trait_open_source = {
+		random = no
+		opinion_gain_monthly = 7
+		weekly_manpower = 727
+		min_export = 0.7
+		civilian_intel_to_others = 1.0
+		enemy_operative_detection_chance_factor = 0.35
 	}
 }
