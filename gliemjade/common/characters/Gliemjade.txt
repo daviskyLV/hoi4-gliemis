@@ -7,12 +7,13 @@ characters = {
             ideology = fascism_ideology
             traits = {
                 GLI_trait_gliemis
+                GLI_trait_cavalry_dream
             }
         }
 
         portraits = {
             civilian = {
-                large = GFX_portrait_GLI_gliemis
+                large = GFX_leader_GLI_gliemis_glotainais
             }
         }
     }
@@ -30,8 +31,29 @@ characters = {
         name = GLI_char_linards_rozvirs
         gender = male
 
+        portraits = {
+            civilian = {
+                large = GFX_leader_GLI_linards_rozvirs
+                small = GFX_advisor_GLI_linards_rozvirs
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = GLI_char_linards_rozvirs
+            traits = {
+                GLI_trait_nonaligned_supporter
+                GLI_trait_production_assistant
+            }
+        }
+
         country_leader = {
             ideology = centrism
+            traits = {
+                GLI_trait_math_addict
+                GLI_trait_traumatized
+                GLI_trait_production_assistant
+            }
         }
     }
 

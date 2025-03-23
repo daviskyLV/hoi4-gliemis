@@ -4,4 +4,31 @@ leader_traits = {
 		defence = 0.25
 		army_speed_factor = -0.25
 	}
+
+	GLI_trait_math_addict = {
+		random = yes # For funnies
+		army_speed_factor = 0.1
+		army_org_regain = -0.1
+	}
+
+	GLI_trait_traumatized = {
+		random = yes # Again would be funny
+		army_morale_factor = -0.2
+	}
+
+	GLI_trait_nonaligned_supporter = {
+		random = no
+		neutrality_drift = 0.05
+		neutrality_acceptance = 75
+	}
+
+	GLI_trait_production_assistant = {
+		random = no
+		production_factory_max_efficiency_factor = 0.1
+	}
+
+	GLI_trait_cavalry_dream = {
+		random = no
+		cavalry_attack_factor = 0.15
+	}
 }

@@ -1,6 +1,16 @@
 spriteTypes = {
+	## LEADERS
 	spriteType = {
-		name = GFX_portrait_GLI_gliemis
-		texturefile = gfx/gliemjade/leaders/portrait_gliemis_glotainais.dds
+		name = GFX_leader_GLI_gliemis_glotainais
+		texturefile = gfx/gliemjade/leaders/gliemis_glotainais.dds
+	}
+	spriteType = {
+		name = GFX_leader_GLI_linards_rozvirs
+		texturefile = gfx/gliemjade/leaders/linards_rozvirs.dds
+	}
+	## ADVISORS
+	spriteType = {
+		name = GFX_advisor_GLI_linards_rozvirs
+		texturefile = gfx/gliemjade/advisors/linards_rozvirs.dds
 	}
 }
