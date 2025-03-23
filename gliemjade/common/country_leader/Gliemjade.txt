@@ -18,20 +18,25 @@ leader_traits = {
 
 	GLI_trait_nonaligned_supporter = {
 		random = no
-		neutrality_drift = 0.05
+		neutrality_drift = 0.17
 		neutrality_acceptance = 75
 	}
 
 	GLI_trait_democratic_supporter = {
 		random = no
-		democratic_drift = 0.05
+		democratic_drift = 0.17
 		democratic_acceptance = 75
-		war_support_weekly = -0.01
+	}
+
+	GLI_trait_fascism_supporter = {
+		random = no
+		fascism_drift = 0.17
+		fascism_acceptance = 75
 	}
 
 	GLI_trait_communism_supporter = {
 		random = no
-		communism_drift = 0.05
+		communism_drift = 0.17
 		communism_acceptance = 75
 	}
 
@@ -69,8 +74,8 @@ leader_traits = {
 		random = no
 		opinion_gain_monthly = 7
 		weekly_manpower = 727
-		min_export = 0.7
-		civilian_intel_to_others = 1.0
+		min_export = 0.69
+		civilian_intel_to_others = 72.7
 		enemy_operative_detection_chance_factor = 0.35
 	}
 }

@@ -33,6 +33,7 @@ characters = {
             traits = {
                 GLI_trait_mega_thinker
                 GLI_trait_high_energy
+                GLI_trait_development_supporter
             }
         }
     }
@@ -51,9 +52,14 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = GLI_char_linards_rozvirs
+            available = {
+                NOT = {
+                    is_country_leader = yes
+                }
+            }
+
             traits = {
                 GLI_trait_nonaligned_supporter
-                GLI_trait_production_assistant
             }
         }
 
@@ -81,9 +87,14 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = GLI_char_andrejs_pingvins
+            available = {
+                NOT = {
+                    is_country_leader = yes
+                }
+            }
+
             traits = {
                 GLI_trait_communism_supporter
-                GLI_trait_development_supporter
             }
         }
 
@@ -98,7 +109,7 @@ characters = {
 
     GLI_char_austra_domataja = {
         name = GLI_char_austra_domataja
-        gener = female
+        gender = female
 
         portraits = {
             civilian = {
@@ -111,7 +122,6 @@ characters = {
             idea_token = GLI_char_austra_domataja
             traits = {
                 GLI_trait_democratic_supporter
-                GLI_trait_development_supporter
             }
         }
     }
